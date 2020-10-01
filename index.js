@@ -56,4 +56,8 @@ client.connect(err => {
 
 });
 
+app.get('/', (req, res) => {
+  res.send('its working but in here no info')
+})
+
 app.listen( process.env.PORT || port) 
